@@ -1,0 +1,11 @@
+{
+    "UI_LXSI_name": "LX Pantalla dividida: mejora de habilidades",
+    "UI_LXSI_desc": "Lleva a cada personaje local (pantalla dividida incluida) a un piso de habilidades, una vez por personaje. Los niveles solo suben, nunca bajan.",
+    "UI_LXSI_enable": "Activar mejora de habilidades",
+    "UI_LXSI_enable_tip": "Apagado = el mod no hace nada. Los personajes que ya recibieron las habilidades las conservan.",
+    "UI_LXSI_combat": "Piso de habilidades de combate",
+    "UI_LXSI_combat_tip": "Fuerza, Estado fisico, Punteria y Recarga suben a este nivel. 0 = no tocarlas.",
+    "UI_LXSI_craft": "Piso de habilidades de crafteo",
+    "UI_LXSI_craft_tip": "Carpinteria, Metalisteria, Electricidad, Mecanica, Albanileria, Herreria, Tallado, Costura, Alfareria, Vidrieria y Carniceria suben a este nivel. 5 desbloquea casi todas las recetas de construccion. 0 = no tocarlas.",
+    "UI_LXSI_halo": "Habilidades mejoradas"
+}

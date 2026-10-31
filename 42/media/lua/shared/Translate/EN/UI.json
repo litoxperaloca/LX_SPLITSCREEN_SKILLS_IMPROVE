@@ -1,0 +1,11 @@
+{
+    "UI_LXSI_name": "LX Split-Screen Skills Boost",
+    "UI_LXSI_desc": "Brings every local character (split-screen included) up to a skill floor, once per character. Levels are only ever raised, never lowered.",
+    "UI_LXSI_enable": "Enable skill boost",
+    "UI_LXSI_enable_tip": "Off = the mod does nothing. Characters who already got their skills keep them.",
+    "UI_LXSI_combat": "Combat skills floor",
+    "UI_LXSI_combat_tip": "Strength, Fitness, Aiming and Reloading are raised to this level. 0 = leave them alone.",
+    "UI_LXSI_craft": "Crafting skills floor",
+    "UI_LXSI_craft_tip": "Carpentry, Metalworking, Electrical, Mechanics, Masonry, Blacksmith, Carving, Tailoring, Pottery, Glassmaking and Butchering are raised to this level. 5 unlocks most building recipes. 0 = leave them alone.",
+    "UI_LXSI_halo": "Skills raised"
+}
