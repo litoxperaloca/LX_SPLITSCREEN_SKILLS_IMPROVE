@@ -112,15 +112,25 @@ if PZAPI and PZAPI.ModOptions then
     local sCombat = o:addSlider("COMBAT", getText("UI_LXSI_combat"), 0, 10, 1, 10, getText("UI_LXSI_combat_tip"))
     local sCraft = o:addSlider("CRAFT", getText("UI_LXSI_craft"), 0, 10, 1, 5, getText("UI_LXSI_craft_tip"))
 
+    -- Greys the sliders out while the master switch is off.
+    local function setSlidersEnabled(on)
+        for _, s in ipairs({ sCombat, sCraft }) do
+            if s and s.setEnabled then pcall(s.setEnabled, s, on == true) end
+        end
+    end
+
     o.apply = function(self)
         opt.enabled = tEnabled:getValue() == true
         opt.combat = math.floor(tonumber(sCombat:getValue()) or 10)
         opt.craft = math.floor(tonumber(sCraft:getValue()) or 5)
-        for _, s in ipairs({ sCombat, sCraft }) do
-            if s and s.setEnabled then pcall(s.setEnabled, s, opt.enabled) end
-        end
+        setSlidersEnabled(opt.enabled)
     end
-    tEnabled.onChange = function(self, value) o:apply() end
+
+    -- onChange runs on the click, BEFORE the options screen writes the new value into the
+    -- option (MainOptions does that in its own apply()), so getValue() would still hand back
+    -- the previous one here. Use the value we are given, and only touch the greying: the real
+    -- settings are read in apply(), which PZAPI calls right after committing every value.
+    tEnabled.onChange = function(self, value) setSlidersEnabled(value) end
 
     -- PZAPI does not call apply() on load: force it on menu entry and on game start.
     Events.OnMainMenuEnter.Add(function() o:apply() end)
