@@ -1,5 +1,5 @@
 version=1
-id=
+id=3831322679
 title=LX Split-Screen Skills Boost
 description=[h1]LX Split-Screen Skills Boost[/h1]
 description=[i]A skill floor for every local character[/i]
