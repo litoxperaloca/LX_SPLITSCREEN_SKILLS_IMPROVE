@@ -6,7 +6,7 @@
 
 > Two people on one couch should be building and fighting, not grinding the same early levels twice.
 
-`Project Zomboid B42.21+` · `v2.1.0` · `CC0`
+`Project Zomboid B42.21+` · `v2.2.0` · `CC0`
 
 [English](#english) · [Español](#español) · [Русский](#русский)
 
